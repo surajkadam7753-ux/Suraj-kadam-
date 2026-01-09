@@ -1,1 +1,88 @@
 # Suraj-kadam-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ff4d6d, #ff85a1);
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    .container {
+      padding: 30px 15px;
+    }
+    h1 {
+      font-size: 2.2em;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .heart {
+      font-size: 60px;
+      animation: beat 1s infinite;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #ff4d6d;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    iframe {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 360px;
+      height: 215px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="heart">❤️</div>
+  <h1>Happy Birthday My Love 🎉</h1>
+
+  <p>
+    Happy birthday dear babe 💗<br><br>
+    You are the most important person of my life.<br>
+    My smile starts with you and ends with you.<br><br>
+    I love uhh so much ❤️<br>
+    More than words can ever explain.<br><br>
+    Thank you for being my everything.
+  </p>
+
+  <button onclick="playSong()">▶ Play Song</button>
+
+  <div id="song" style="display:none;">
+    <iframe
+      src="https://www.youtube.com/embed/9T-Zbxg9X_4?autoplay=1"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<script>
+  function playSong() {
+    document.getElementById("song").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
